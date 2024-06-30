@@ -1,0 +1,34 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "jest": "^28.1.3",
+    "supertest": "^6.2.4"
+  },
+  "devDependencies": {
+    "jest-html-reporter": "^3.10.2"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporter",
+        {
+          "pageTitle": "Test Report",
+          "outputPath": "test-report.html",
+          "includeFailureMsg": true,
+          "includeSuiteFailure": true,
+          "includeConsoleLog": true
+        }
+      ]
+    ]
+  }
+}
